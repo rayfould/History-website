@@ -1,0 +1,139 @@
+/* Subpage Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #7e0000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #000080;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #FFD700;
+}
+
+.intro, .final-notes {
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border: 7px solid #7e0000; /* Red border matching the main CSS style */
+    text-align: center; /* Center the text */
+    margin: 50px auto 50px; /* Increase top margin, auto for horizontal centering, and adjust bottom margin if needed */
+    max-width: 80%; /* Limit the width to ensure it doesn't stretch too wide */
+}
+
+.category {
+    margin: 20px;
+    padding: 10px;
+    border: 7px solid #7e0000;
+}
+
+.category h2 {
+    color: #000080;
+    text-align: center;  /* To center the category titles */
+    margin: 20px 0;
+}
+
+.category-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 50px 0;
+    background-color: #f0f0f0;
+    border: 2px solid #000080;
+    box-sizing: border-box;
+}
+
+.image-container {
+    width: 60%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.category-item img {
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+}
+
+.text-content {
+    width: 40%;
+    padding: 20px;
+    background-color: #d9d9d9;
+    border: 2px solid black;
+    box-sizing: border-box;
+    margin-left: 30px;  /* Consistent margin for spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+    .category-item {
+        flex-direction: column;
+    }
+
+    .image-container, .text-content {
+        width: 100%;
+        margin-left: 0;  /* Reset margins for smaller screens */
+    }
+}
+
+.category-item:nth-child(odd) {
+    flex-direction: row-reverse; /* Text on the left, image on the right */
+    .text-content {
+        margin-left: 0; /* Remove margin-left */
+        margin-right: 30px; /* Add margin-right */
+    }
+}
+
+.category-item:nth-child(even) {
+    .text-content {
+        margin-right: 0; /* Reset margin-right */
+        margin-left: 30px; /* Ensure margin-left is applied */
+    }
+}
+
+
+.footer {
+    background-color: #7e0000; /* Deep red, to match your header */
+    color: #ffffff; /* White text color for contrast */
+    text-align: center;
+    padding: 20px;
+    font-size: 16px; /* Adjust font size as needed */
+    margin-top: 50px; /* Ensure there's space between the last content and the footer */
+}
