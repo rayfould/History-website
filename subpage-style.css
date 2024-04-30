@@ -8,12 +8,57 @@ body {
 }
 
 .header {
+    /* background-image: url('../images/original.avif'); */
     background-color: #7e0000;
-    color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    padding-top: 20px; /* Added space on top */
+    padding-bottom: 20px; /* Added space on bottom */
+    height: 150px;
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 20px;
+    color: #ffffff;
+    position: relative;
+    margin: 5px;
+    border: 5px solid #7e0000;
+
 }
 
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/american-flag-wave-close-memorial-600nw-1677207535.webp');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    background-color: #7e0000; /* Fallback color */
+}
+
+.background-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(126, 0, 0, 0.75); /* Semi-transparent red overlay */
+    z-index: 1;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2; /* Ensures text and nav are above the overlay */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .header h1 {
     font-size: 48px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -65,10 +110,13 @@ nav a:hover {
 
 
 .category h2 {
-    color: #000080;
-    text-align: center;  /* To center the category titles */
-    margin: 20px 0;
+    font-size: 36px; /* Increase the font size */
+    font-weight: bold; /* Make the text bold */
+    color: #000080; /* Keeping the color, adjust if needed */
+    text-align: center; /* Center the title */
+    margin: 20px 0; /* Adjust margin as needed */
 }
+
 
 .category-item {
     display: flex;
@@ -98,6 +146,7 @@ nav a:hover {
 }
 
 .text-content {
+    font-size: 24px; /* Increase the font size as needed */
     width: 40%;
     padding: 20px;
     background-color: #d9d9d9;
@@ -141,6 +190,13 @@ nav a:hover {
     height: 5px; /* Thickness of the line */
     background-color: #000080; /* Color of the line */
     margin: 50px 30px; /* Space above and below the line */
+}
+
+.text-content strong {
+    display: block; /* Makes the element take a full line */
+    font-weight: bold; /* Makes the text bold */
+    text-align: center; /* Centers the text */
+    margin-bottom: 5px; /* Adds some space below the heading */
 }
 
 
