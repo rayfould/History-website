@@ -88,11 +88,21 @@ nav a:hover {
 
 .intro, .final-notes {
     padding: 20px;
+    font-size: 24px;
+    color: #000080;
     background-color: #ffffff; /* White background */
     border: 7px solid #7e0000; /* Red border matching the main CSS style */
     text-align: center; /* Center the text */
     margin: 50px auto 50px; /* Increase top margin, auto for horizontal centering, and adjust bottom margin if needed */
     max-width: 80%; /* Limit the width to ensure it doesn't stretch too wide */
+}
+
+.intro h2 {
+    font-size: 32px; /* Larger font size for the title */
+    color: #000080; /* Color that matches the border for consistency */
+    text-align: center; /* Center the title */
+    margin-top: 0; /* Remove top margin if necessary */
+    margin-bottom: 20px; /* Space between the title and the first paragraph */
 }
 
 .category {
