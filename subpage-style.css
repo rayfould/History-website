@@ -51,10 +51,18 @@ nav a:hover {
 }
 
 .category {
-    margin: 20px;
-    padding: 10px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px 10px 60px; /* Increased bottom padding to accommodate separator */
     border: 7px solid #7e0000;
+    position: relative;
+    overflow: visible; /* Ensure the separator is not cut off */
 }
+
+
+
 
 .category h2 {
     color: #000080;
@@ -126,6 +134,13 @@ nav a:hover {
         margin-right: 0; /* Reset margin-right */
         margin-left: 30px; /* Ensure margin-left is applied */
     }
+}
+
+
+.line-separator {
+    height: 5px; /* Thickness of the line */
+    background-color: #000080; /* Color of the line */
+    margin: 50px 30px; /* Space above and below the line */
 }
 
 
