@@ -1,0 +1,172 @@
+body {
+    margin: 5px;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.header {
+    /* background-image: url('../images/original.avif'); */
+    background-color: #7e0000;
+    background-size: cover;
+    background-position: center;
+    padding-top: 20px; /* Added space on top */
+    padding-bottom: 20px; /* Added space on bottom */
+    height: 150px;
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    z-index: -1;
+}
+
+
+.header h1 {
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 0;
+    margin-bottom: 20px; /* Space between title and nav buttons */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF; /* White */
+    background-color: #000080;; /* Crimson Red */
+    padding: 10px 15px;
+    border-radius: 5px; /* Optional: rounded corners */
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #FFD700; /* Mustard Yellow, for hover effect */
+}
+
+.intro {
+    margin: 25px;
+    border-color: #7e0000;
+    border-width: 7px;
+    border-style: solid;
+    padding: 50px;
+    text-align: center;
+}
+
+.intro p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000080;
+}
+
+
+.topic-selector {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    height: 100vh; /* Set the height of the container to be 100% of the viewport height */
+}
+
+.topic-button {
+    flex: 1; /* Each button takes equal width */
+    height: 100%; /* Full height of the parent container */
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 10px; /* Spacing between buttons */
+    filter: grayscale(100%); /* Start with a black and white image */
+    transition: filter 0.33s ease; /* Smooth transition for the filter */
+    border: 7px solid #2b2bd9; /* White border for the image button */
+}
+
+.topic-button h2 {
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent background for readability */
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0; /* Remove default margin */
+    font-size: 1.5rem;
+    border: 3px solid #ffffff; /* Gold border for the text background */
+}
+
+.topic-button:hover {
+    filter: none; /* Remove the filter on hover to show full color */
+}
+
+.timeline {
+    position: relative;
+    padding: 20px;
+    border-left: 4px solid #7e0000; /* Timeline vertical line */
+}
+
+.timeline-event {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.timeline-circle {
+    position: absolute;
+    left: -13px; /* Adjust based on actual size */
+    top: 0px;
+    bottom: 30px;
+    width: 20px;
+    height: 20px;
+    background-color: #DC143C;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+.timeline-content {
+    margin-left: 30px;
+    display: none;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    width: 300px; /* Adjust based on content */
+}
+
+.timeline-event:hover .timeline-content, .timeline-event:focus .timeline-content {
+    display: block;
+}
+
+.timeline-event:focus .timeline-content {
+    position: absolute;
+    top: -10px;
+    left: 40px;
+}
+.site-footer {
+    background-color: #7e0000; /* Deep red */
+    color: #ffffff; /* White */
+    text-align: center;
+    padding: 50px 20px; /* Padding to create space */
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 40px; /* Adds space above the footer */
+}
+
+footer p {
+    margin: 0; /* Removes default margin to clean up layout */
+}
