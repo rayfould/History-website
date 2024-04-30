@@ -123,6 +123,11 @@ nav a:hover {
     border-style: solid;
 }
 
-footer p {
-    margin: 0; /* Removes default margin to clean up layout */
+.site-footer {
+    background-color: #7e0000; /* Deep red, to match your header */
+    color: #ffffff; /* White text color for contrast */
+    text-align: center;
+    padding: 20px 0; /* Vertical padding */
+    font-size: 16px;
+    width: 100%; /* Ensure it spans the full width of the viewport */
 }
