@@ -30,7 +30,7 @@ body {
     background-size: cover;
     background-position: center;
     z-index: 0;
-    background-color: #7e0000; /* Fallback color */
+    background-color: #7e0000; 
 }
 
 .background-overlay::before {
@@ -40,13 +40,13 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(126, 0, 0, 0.75); /* Semi-transparent red overlay */
+    background: rgba(126, 0, 0, 0.75); 
     z-index: 1;
 }
 
 .header-content {
     position: relative;
-    z-index: 2; /* Ensures text and nav are above the overlay */
+    z-index: 2; 
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -59,27 +59,27 @@ body {
     font-size: 48px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin-top: 0;
-    margin-bottom: 20px; /* Space between title and nav buttons */
+    margin-bottom: 20px; 
 }
 
 nav {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Space between buttons */
+    gap: 20px; 
 }
 
 nav a {
     text-decoration: none;
-    color: #FFFFFF; /* White */
-    background-color: #000080;; /* Crimson Red */
+    color: #FFFFFF; 
+    background-color: #000080;; 
     padding: 10px 15px;
-    border-radius: 5px; /* Optional: rounded corners */
+    border-radius: 5px; 
     font-weight: bold;
     transition: background-color 0.3s;
 }
 
 nav a:hover {
-    background-color: #FFD700; /* Mustard Yellow, for hover effect */
+    background-color: #FFD700; 
 }
 
 .intro {
@@ -102,66 +102,65 @@ nav a:hover {
 
 
 .intro h2 {
-    font-size: 32px; /* Larger font size for the title */
-    color: #000080; /* Color that matches the border for consistency */
-    text-align: center; /* Center the title */
-    margin-top: 0; /* Remove top margin if necessary */
-    margin-bottom: 20px; /* Space between the title and the first paragraph */
+    font-size: 32px; 
+    color: #000080; 
+    text-align: center; 
+    margin-top: 0; 
+    margin-bottom: 20px; 
 }
 
 .topic-selector {
     display: flex;
     justify-content: space-around;
     margin: 20px 0;
-    height: 100vh; /* Set the height of the container to be 100% of the viewport height */
+    height: 100vh; 
 }
 
 .topic-button {
-    flex: 1; /* Each button takes equal width */
-    height: 100%; /* Full height of the parent container */
+    flex: 1; 
+    height: 100%; 
     background-size: cover;
     background-position: center;
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none; /* Remove underline from links */
-    margin: 0 10px; /* Spacing between buttons */
-    filter: grayscale(100%); /* Start with a black and white image */
-    transition: filter 0.33s ease; /* Smooth transition for the filter */
-    border: 7px solid #2b2bd9; /* White border for the image button */
+    text-decoration: none; 
+    margin: 0 10px; 
+    filter: grayscale(100%); 
+    transition: filter 0.33s ease; 
+    border: 7px solid #2b2bd9; 
 }
 
 .topic-button h2 {
-    background: rgba(0, 0, 0, 0.4); /* Semi-transparent background for readability */
+    background: rgba(0, 0, 0, 0.4); 
     width: 100%;
     text-align: center;
     padding: 10px 0;
-    margin: 0; /* Remove default margin */
+    margin: 0; 
     font-size: 1.5rem;
-    border: 3px solid #ffffff; /* Gold border for the text background */
+    border: 3px solid #ffffff; 
 }
 
 .topic-button:hover {
-    filter: none; /* Remove the filter on hover to show full color */
+    filter: none;
 }
 
 .timeline {
-    padding: 20px; /* Example padding, adjust or remove as needed */
-    margin-bottom: 100px; /* Space below the timeline before the footer or next content section */
+    padding: 20px; 
+    margin-bottom: 100px; 
     margin-top: 100px;
     border-color: #7e0000;
     border-width: 7px;
     border-style: solid;
-    background-color: #f0f0f0;
 
 }
 
 .site-footer {
-    background-color: #7e0000; /* Deep red, to match your header */
-    color: #ffffff; /* White text color for contrast */
+    background-color: #7e0000; 
+    color: #ffffff; 
     text-align: center;
-    padding: 20px 0; /* Vertical padding */
+    padding: 20px 0; 
     font-size: 16px;
-    width: 100%; /* Ensure it spans the full width of the viewport */
+    width: 100%; 
 }
