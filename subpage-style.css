@@ -8,15 +8,14 @@ body {
 }
 
 .header {
-    /* background-image: url('../images/original.avif'); */
     background-color: #7e0000;
     background-size: cover;
     background-position: center;
-    padding-top: 20px; /* Added space on top */
-    padding-bottom: 20px; /* Added space on bottom */
+    padding-top: 20px; 
+    padding-bottom: 20px; 
     height: 150px;
     display: flex;
-    flex-direction: column; /* Stacks children vertically */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -37,7 +36,7 @@ body {
     background-size: cover;
     background-position: center;
     z-index: 0;
-    background-color: #7e0000; /* Fallback color */
+    background-color: #7e0000; 
 }
 
 .background-overlay::before {
@@ -47,13 +46,13 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(126, 0, 0, 0.75); /* Semi-transparent red overlay */
+    background: rgba(126, 0, 0, 0.75); 
     z-index: 1;
 }
 
 .header-content {
     position: relative;
-    z-index: 2; /* Ensures text and nav are above the overlay */
+    z-index: 2; 
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -90,27 +89,27 @@ nav a:hover {
     padding: 20px;
     font-size: 24px;
     color: #000080;
-    background-color: #ffffff; /* White background */
-    border: 7px solid #7e0000; /* Red border matching the main CSS style */
-    text-align: center; /* Center the text */
-    margin: 50px auto 50px; /* Increase top margin, auto for horizontal centering, and adjust bottom margin if needed */
-    max-width: 80%; /* Limit the width to ensure it doesn't stretch too wide */
+    background-color: #f0f0f0;
+    border: 7px solid #7e0000; 
+    text-align: center; 
+    margin: 50px auto 50px; 
+    max-width: 80%; 
 }
 
 .intro h2 {
-    font-size: 32px; /* Larger font size for the title */
-    color: #000080; /* Color that matches the border for consistency */
-    text-align: center; /* Center the title */
-    margin-top: 0; /* Remove top margin if necessary */
-    margin-bottom: 20px; /* Space between the title and the first paragraph */
+    font-size: 32px; 
+    color: #000080; 
+    text-align: center; 
+    margin-top: 0; 
+    margin-bottom: 20px; 
 }
 
 .intro h3 {
-    font-size: 28px; /* Larger font size for the title */
-    color: #000080; /* Color that matches the border for consistency */
-    text-align: center; /* Center the title */
-    margin-top: 0; /* Remove top margin if necessary */
-    margin-bottom: 20px; /* Space between the title and the first paragraph */
+    font-size: 28px; 
+    color: #000080; 
+    text-align: center; 
+    margin-top: 0; 
+    margin-bottom: 20px; 
 }
 
 .category {
@@ -118,21 +117,21 @@ nav a:hover {
     margin-bottom: 100px;
     margin-left: 30px;
     margin-right: 30px;
-    padding: 10px 10px 60px; /* Increased bottom padding to accommodate separator */
+    padding: 10px 10px 60px; 
     border: 7px solid #7e0000;
     position: relative;
-    overflow: visible; /* Ensure the separator is not cut off */
+    overflow: visible; 
 }
 
 
 
 
 .category h2 {
-    font-size: 36px; /* Increase the font size */
-    font-weight: bold; /* Make the text bold */
-    color: #000080; /* Keeping the color, adjust if needed */
-    text-align: center; /* Center the title */
-    margin: 20px 0; /* Adjust margin as needed */
+    font-size: 36px; 
+    font-weight: bold;
+    color: #000080; 
+    text-align: center; 
+    margin: 20px 0; 
 }
 
 
@@ -164,13 +163,13 @@ nav a:hover {
 }
 
 .text-content {
-    font-size: 24px; /* Increase the font size as needed */
+    font-size: 24px; 
     width: 40%;
     padding: 20px;
     background-color: #d9d9d9;
     border: 2px solid black;
     box-sizing: border-box;
-    margin-left: 30px;  /* Consistent margin for spacing */
+    margin-left: 30px;  
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -184,45 +183,45 @@ nav a:hover {
 
     .image-container, .text-content {
         width: 100%;
-        margin-left: 0;  /* Reset margins for smaller screens */
+        margin-left: 0;  
     }
 }
 
 .category-item:nth-child(odd) {
-    flex-direction: row-reverse; /* Text on the left, image on the right */
+    flex-direction: row-reverse; 
     .text-content {
-        margin-left: 0; /* Remove margin-left */
-        margin-right: 30px; /* Add margin-right */
+        margin-left: 0; 
+        margin-right: 30px; 
     }
 }
 
 .category-item:nth-child(even) {
     .text-content {
-        margin-right: 0; /* Reset margin-right */
-        margin-left: 30px; /* Ensure margin-left is applied */
+        margin-right: 0; 
+        margin-left: 30px; 
     }
 }
 
 
 .line-separator {
-    height: 5px; /* Thickness of the line */
-    background-color: #000080; /* Color of the line */
-    margin: 50px 30px; /* Space above and below the line */
+    height: 5px; 
+    background-color: #000080; 
+    margin: 50px 30px; 
 }
 
 .text-content strong {
-    display: block; /* Makes the element take a full line */
-    font-weight: bold; /* Makes the text bold */
-    text-align: center; /* Centers the text */
-    margin-bottom: 5px; /* Adds some space below the heading */
+    display: block; 
+    font-weight: bold; 
+    text-align: center; 
+    margin-bottom: 5px; 
 }
 
 
 .footer {
-    background-color: #7e0000; /* Deep red, to match your header */
-    color: #ffffff; /* White text color for contrast */
+    background-color: #7e0000; 
+    color: #ffffff; 
     text-align: center;
     padding: 20px;
-    font-size: 16px; /* Adjust font size as needed */
-    margin-top: 50px; /* Ensure there's space between the last content and the footer */
+    font-size: 16px; 
+    margin-top: 50px; 
 }

@@ -153,6 +153,8 @@ nav a:hover {
     border-color: #7e0000;
     border-width: 7px;
     border-style: solid;
+    background-color: #f0f0f0;
+
 }
 
 .site-footer {
