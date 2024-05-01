@@ -105,6 +105,14 @@ nav a:hover {
     margin-bottom: 20px; /* Space between the title and the first paragraph */
 }
 
+.intro h3 {
+    font-size: 28px; /* Larger font size for the title */
+    color: #000080; /* Color that matches the border for consistency */
+    text-align: center; /* Center the title */
+    margin-top: 0; /* Remove top margin if necessary */
+    margin-bottom: 20px; /* Space between the title and the first paragraph */
+}
+
 .category {
     margin-top: 100px;
     margin-bottom: 100px;
