@@ -225,3 +225,23 @@ nav a:hover {
     font-size: 16px; 
     margin-top: 50px; 
 }
+
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    z-index: 99;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: #000080;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#backToTopBtn:hover {
+    background-color: #FFD700;
+}
